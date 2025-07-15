@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1 style="background-color: aqua;">DAY 2: NUMBERS</h1>
+    <script>
+        let n1= 22;
+        console.log(typeof(n1));
+        console.log(parseFloat(n1));
+        console.log(parseInt(22.34));
+        let n2=23.453633;
+        console.log(n2.toPrecision(5));//belli basamak kadarını getirir. virgülden önce ve sonra dahil
+        console.log(n2.toFixed(2));//virgülden sonra basamak kadarı getirir. 
+        console.log(Math.round(n2))//en yakına yuvarlar
+        console.log(Math.ceil(n2))// yukarı yuvarlar
+        console.log(Math.floor(n2))// aşağı yuvarlar
+
+
+
+
+
+        //arrays
+        let items=["iphone","samsung","nokia","huawei","honor"];
+        let costs=[19452,6463,734,347,12900];
+       
+        console.log(items[0]+" "+costs[0]);
+        console.log(items[1]+" "+costs[1]);
+        console.log(items[2]+" "+costs[2]);
+        console.log(items[3]+" "+costs[3]);
+        console.log(items[4]+" "+costs[4]);
+
+        //array methods
+        console.log(items.length);//dizi uzunluğunu  verir
+        console.log(items[items.length-1]);//son elemanı verir
+        console.log(items.indexOf("nokia"));//nokia elemanının index numarasını verir
+        console.log(items.push("oppo"));//sona eleman ekler
+        console.log(items)
+        console.log(items.pop())//son elemanı siler. ve onu döndürür.
+        console.log(items)
+        console.log(items.shift())//ilk elemanı siler. ve onu döndürür
+        console.log(items.unshift("hp"));//başa eleman ekler
+        console.log(items)
+        console.log(items.reverse())//diziyi ters çevirir
+        console.log(items.concat(costs));//dizileri birleştirir
+        console.log(items.toString())//stringe çevirir
+        console.log(items.includes("nokia"));//nokia elemanının varlığını kontrol eder
+
+
+        //array examples
+        console.log("------------------")
+        let fruits=["kiraz", "karpuz", "kavun","erik"];
+        console.log(fruits.length);
+        console.log(fruits[0]);
+        console.log(fruits[fruits.length-1]);
+        console.log(fruits.includes("kavun"));
+        console.log(fruits.push("çilek"));
+        console.log(fruits);
+        console.log("----------------");
+        console.log(fruits.pop());
+        console.log(fruits.pop());
+    </script>
+</body>
+</html>

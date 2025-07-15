@@ -30,6 +30,25 @@
         console.log(mesaj_2.trimEnd())//sondaki boşlukları siler
         console.log(mesaj_2.trim())//baş ve sondaki boşlukları siler
 
+
+
+        //String  methods examples
+        let url = "https://www.sadikturan.com";
+        let kursAdi = "komple web geliştirme kursu";
+        //karakter uzunluğu
+        console.log("URL'nin karakter uzunluğu: "+url.length)
+        //kelime uzunluğu
+        var kelime=kursAdi.split(" ");
+        console.log(kelime.length);
+        //url https ile mi başlıyor
+        console.log(url.startsWith("https"));
+
+        //kursAdi içerisinde belli bir kelime var mu?
+        console.log(kursAdi.indexOf("web"));
+        //url - kursAdi birleştirme
+        kursAdi=kursAdi.replaceAll(" ","-")
+        console.log(url+"/"+kursAdi);
+
     </script>
 </body>
 </html>
