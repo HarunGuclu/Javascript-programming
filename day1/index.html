@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        JAVASCRIPT PROGRAMMING
+    </h1>
+    <script>
+        //console.log("Hello World");
+        var mesaj="merhaba javascript";
+        
+        //Strings and string methods
+        console.log(mesaj.toLowerCase())//küçük harfe çevirir
+        console.log(mesaj.toUpperCase())//büyük harfe çevirir
+        console.log(mesaj.length)//karakter sayısını verir
+        console.log(mesaj[2]);//2. indexteki karakteri verir
+        console.log(mesaj.indexOf("a"))//a karakterinin indexini verir
+        console.log(mesaj.substring(3,10))//3. indexten 10. indexe kadar olan kısmı verir. 3 dahil 10 değil
+        console.log(mesaj.slice(3,10))//3. indexten 10. indexe kadar olan kısmı verir. 3 dahil 10 değil
+        console.log(mesaj.replace("javascript","java"))//javascript yerine java yazdırır
+        console.log(mesaj.split(" "))//boşluklardan ayırır. diziye çevirir
+        console.log(mesaj.split("a"))//a karakteriyle ayırır.
+        var mesaj_2=" programlama dilleri " 
+        console.log(mesaj_2);
+        console.log(mesaj_2.trimStart())//baştaki boşlukları siler
+        console.log(mesaj_2.trimEnd())//sondaki boşlukları siler
+        console.log(mesaj_2.trim())//baş ve sondaki boşlukları siler
+
+    </script>
+</body>
+</html>
