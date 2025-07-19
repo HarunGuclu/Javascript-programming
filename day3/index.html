@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 STYLE="color:red; background-color: yellow;">
+        DAY-3: JAVASCRIPT PROGRAMMING
+    </h1>
+    <script>
+
+
+        console.log("Hello World");
+
+        //objects
+        let kullanici_1={
+            ad: "Gülsüm",
+            soyad: "Kara",
+            yas: 19,
+            meslek: "developer",
+            adres:{
+                il: "Ankara",
+                ilce: "Kadıköy",
+                mahalle: "Kadıköy Mahallesi",
+                sokak: "Kadıköy Sokak",
+                numara: 123456
+            },
+            hobiler:[
+                "yazılım",
+                "programlama",
+                "web geliştirme",
+                "web arayüzleri"
+            ]
+        };
+
+        let kullanici_2={
+            "ad": "Selma", 
+            "soyad": "Elamas", 
+            "yas": 30, 
+            "meslek": "waitress" ,
+            "adres": {
+                "il": "İstanbul",
+                "ilce": "Kadıköy",
+                "mahalle": "Kadıköy Mahallesi",
+                "sokak": "Kadıköy Sokak",
+                "numara": 123456
+            },
+            hobiler:[
+                "futbol", 
+                "basketbol", 
+                "tenis", 
+                "voleybol", 
+                "pinpon", 
+                
+            ]
+        };
+        console.log(kullanici_1);
+        console.log(kullanici_2);
+        console.log(kullanici_2.soyad);
+        console.log(kullanici_1.ad);
+        
+        //bir obje altında bir nesne, bir dizi  daha tanımlanabilir
+        console.log(kullanici_1.adres.mahalle);
+        console.log(kullanici_2.adres.il);
+
+
+        console.log(kullanici_2.hobiler[2]);
+        console.log(kullanici_1.hobiler.toString());
+
+        console.log("---------------------");
+        const kdv=1.2;
+        let siparis_1={
+            musteri_id:10,
+            siparis_id:101,
+            siparis_tarihi:"2022-01-01",
+            odeme_sekli:"kredi kartı",
+            kargo_adresi:{
+                il:"kocaeli",
+                ilce:"izmit",
+                mahalle:"yahya kemal mahallesi"
+            },
+            urunler:[
+                {
+                   
+                    urun_id:101,
+                    urun_adi:"iphone 13 pro max",
+                    urun_fiyat:14000,
+                    urun_url:"https://www.apple.com.tr/iphone-13-pro-max/"
+                },
+                {
+                    urun_id:102,
+                    urun_adi:"iphone 14 max",
+                    urun_fiyat:17000
+                },
+                {
+                    urun_id:103,
+                    urun_adi:"iphone 10 pro ",
+                    urun_fiyat:8000
+                },
+                
+            ]
+           
+        };
+
+
+
+        let siparis_2={
+            musteri_id:20,
+            siparis_id:111,
+            siparis_tarihi:"2024-11-11",
+            odeme_sekli:"nakit",
+            kargo_adresi:{
+                il:"samsun",
+                ilce:"bafra",
+                mahalle:" kemal ataturk mahallesi"
+            },
+            urunler:[
+                {
+                   
+                    urun_id:201,
+                    urun_adi:"samsung s23  max",
+                    urun_fiyat:20000,
+                    urun_url:"https://www.samsung.com.tr/iphone-13-pro-max/"
+                },
+                {
+                    urun_id:202,
+                    urun_adi:"samsung s23 ",
+                    urun_fiyat:15000
+                },
+                {
+                    urun_id:203,
+                    urun_adi:"samsung s20 ",
+                    urun_fiyat: 12000
+                },
+                
+            ]
+           
+        };
+        console.log(siparis_1.urunler[0].urun_adi+" KDV'li fiyatı:"+siparis_1.urunler[0].urun_fiyat*kdv)
+        console.log(siparis_1.urunler[1].urun_adi+" KDV'li fiyatı:"+siparis_1.urunler[1].urun_fiyat*kdv)
+        console.log(siparis_1.urunler[2].urun_adi+" KDV'li fiyatı:"+siparis_1.urunler[2].urun_fiyat*kdv)
+
+        console.log("-----------------")
+        console.log(siparis_2.urunler[0].urun_adi+" KDV'li fiyatı:"+siparis_2.urunler[0].urun_fiyat*kdv)
+        console.log(siparis_2.urunler[1].urun_adi+" KDV'li fiyatı:"+siparis_2.urunler[1].urun_fiyat*kdv)
+        console.log(siparis_2.urunler[2].urun_adi+" KDV'li fiyatı:"+siparis_2.urunler[2].urun_fiyat*kdv)
+
+        console.log("-----------------")
+        console.log("Sipariş-2'nin toplam sepet tutarı:"+(siparis_2.urunler[0].urun_fiyat*kdv+siparis_2.urunler[1].urun_fiyat*kdv+siparis_2.urunler[2].urun_fiyat*kdv))
+
+        console.log("Sipariş-1'nin toplam sepet tutarı:"+(siparis_1.urunler[0].urun_fiyat*kdv+siparis_1.urunler[1].urun_fiyat*kdv+siparis_1.urunler[2].urun_fiyat*kdv))
+
+
+
+
+
+    </script>
+</body>
+</html>
