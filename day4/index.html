@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 style="background-color: coral;">If-else</h1>
+    <script>
+
+
+
+        let username="javascript";
+        let password="programming";
+        if(username=="javascript" && password=="programming"){
+            console.log("Welcome to app");
+        }
+        else if(username=="javascript" && password!="programming"){
+            console.log("Invalid password");
+        }
+        else if(username!="javascript" && password=="programming"){
+            console.log("Invalid username");
+        }
+        else{
+            console.log("Invalid username and password");
+        }
+
+
+
+        console.log("-------------")
+
+        let yas=17
+        let egitim="universite"
+        // if(yas>=18){
+        //     if(egitim=="lise" || egitim=="universite"){
+        //         console.log("Ehliyet alabilirsiniz");
+        //     }
+        //     else{
+        //         console.log("Ehliyet alamazsınız");
+        //     }
+        // }
+        // else{
+        //     console.log("Ehliyet alamazsınız");
+        // }
+
+        if(yas>=18 &&(egitim=="lise" || egitim=="universite"))
+        {
+            console.log("Ehliyet alabilirsiniz");
+        }
+        else{
+            console.log("Ehliyet alamazsınız");
+        }
+
+
+
+
+
+
+
+
+        //bir sayının 50-100 aralığında olması
+        let s1=10;
+        if(s1<=100 && s1>=50)
+        {
+            console.log("sayı 50-100 aralığındadır");
+        }
+        else{
+            console.log("sayı 50-100 aralığında değildir");
+        }
+
+
+        //sayının pozitif çift olması
+        let s2=-36;
+        if(s2>=0 &&(s2%2==0))
+        {
+            console.log("sayı pozitif çift sayıdır");
+        }
+        else if(s2<0 && s2%2==0)
+        {
+            console.log("sayı negatif ve çifttir");
+        }
+        
+       
+        else{
+            console.log("sayı pozitif çift sayı değildir");
+        }
+
+
+        //x,y,z büyüklük karşılaştırması
+        let x=5,y=4,z=6
+        if(x>y&&x>z)
+        {
+            console.log("x en büyük sayıdır");
+            if(y<z){
+                console.log("büyüklük sıralaması:x>z>y")
+            }
+            else{
+                console.log("büyüklük sıralaması:x>y>z")
+            }
+        }
+        else if(y>x&&y>z)
+        {
+            console.log("y en büyük sayıdır");
+            if(x<z){
+                console.log("büyüklük sıralaması:y>z>x")
+            }
+            else{
+                console.log("büyüklük sıralaması:y>x>z")
+            }
+        }
+        else{
+            console.log("z en büyük sayıdır");
+            if(y<x){
+                console.log("büyüklük sıralaması:z>x>y")
+            }
+            else{
+                console.log("büyüklük sıralaması:z>y>x")
+            }
+        }
+
+
+        console.log("---------------")
+       
+
+        let vize1=40,vize2=4, final=70;
+        if(final<50)
+            console.log("kaldı. Final 50'den düşük");
+        else 
+        {
+            if(final==70 &&((vize1*0.2+vize2*0.2+final*0.6)<50))
+                console.log("geçti" + "ortalama: "+(vize1*0.2+vize2*0.2+final*0.6));
+            
+             else if((vize1*0.2+vize2*0.2+final*0.6)>=50)
+                console.log("geçti. Ortalama: "+(vize1*0.2+vize2*0.2+final*0.6));
+            else
+                console.log("kaldı. Ortalama: "+(vize1*0.2+vize2*0.2+final*0.6));
+        }
+        console.log("---------------")
+        //FOR loop
+        for(let i =1; i<10;i++)
+        {
+            console.log(i);
+        }
+
+
+        let birlestirme=""
+        for(let i =1; i<10;i++)
+        {
+            birlestirme+=i+" "
+        }
+        console.log(birlestirme)
+
+
+        console.log("---------------")
+
+        let sayilar=[12,34,56,32,76,233]
+        let toplam=0
+        let ortalama=0
+        for(let i = 0; i<sayilar.length;i++)
+        {
+            toplam+=sayilar[i];
+            console.log(sayilar[i]);
+        }
+        console.log("sayıların toplamı:" +toplam);
+        console.log("sayıların ortalaması:" +(toplam/sayilar.length).toFixed(4));
+        
+        console.log("---------------")
+
+        //while loop
+        let i=1;
+        let birlestirme2=""
+        while(i<10)
+        {
+            birlestirme2 += i + " "
+            i++;
+        }
+        console.log(birlestirme2)
+
+        console.log("---------------")
+
+        let s3=1;
+        while(s3<100){
+            if(s3=6){
+                console.log(s3);
+                break;
+
+            }
+            s3++;
+        }
+        console.log("---------------")
+            
+
+
+        
+
+       
+        
+    </script>
+    </script>
+
+</body>
+</html>
