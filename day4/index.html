@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
-    <h1 style="background-color: coral;">If-else</h1>
+    <h1 style=" text-align:center; background-color: coral;">IF-ELSE/LOOPS</h1>
     <script>
 
 
 
-        let username="javascript";
-        let password="programming";
-        if(username=="javascript" && password=="programming"){
+        let username = "javascript";
+        let password = "programming";
+        if (username == "javascript" && password == "programming") {
             console.log("Welcome to app");
         }
-        else if(username=="javascript" && password!="programming"){
+        else if (username == "javascript" && password != "programming") {
             console.log("Invalid password");
         }
-        else if(username!="javascript" && password=="programming"){
+        else if (username != "javascript" && password == "programming") {
             console.log("Invalid username");
         }
-        else{
+        else {
             console.log("Invalid username and password");
         }
 
@@ -31,8 +33,8 @@
 
         console.log("-------------")
 
-        let yas=17
-        let egitim="universite"
+        let yas = 17
+        let egitim = "universite"
         // if(yas>=18){
         //     if(egitim=="lise" || egitim=="universite"){
         //         console.log("Ehliyet alabilirsiniz");
@@ -45,11 +47,10 @@
         //     console.log("Ehliyet alamazsınız");
         // }
 
-        if(yas>=18 &&(egitim=="lise" || egitim=="universite"))
-        {
+        if (yas >= 18 && (egitim == "lise" || egitim == "universite")) {
             console.log("Ehliyet alabilirsiniz");
         }
-        else{
+        else {
             console.log("Ehliyet alamazsınız");
         }
 
@@ -61,118 +62,108 @@
 
 
         //bir sayının 50-100 aralığında olması
-        let s1=10;
-        if(s1<=100 && s1>=50)
-        {
+        let s1 = 10;
+        if (s1 <= 100 && s1 >= 50) {
             console.log("sayı 50-100 aralığındadır");
         }
-        else{
+        else {
             console.log("sayı 50-100 aralığında değildir");
         }
 
 
         //sayının pozitif çift olması
-        let s2=-36;
-        if(s2>=0 &&(s2%2==0))
-        {
+        let s2 = -36;
+        if (s2 >= 0 && (s2 % 2 == 0)) {
             console.log("sayı pozitif çift sayıdır");
         }
-        else if(s2<0 && s2%2==0)
-        {
+        else if (s2 < 0 && s2 % 2 == 0) {
             console.log("sayı negatif ve çifttir");
         }
-        
-       
-        else{
+
+
+        else {
             console.log("sayı pozitif çift sayı değildir");
         }
 
 
         //x,y,z büyüklük karşılaştırması
-        let x=5,y=4,z=6
-        if(x>y&&x>z)
-        {
+        let x = 5, y = 4, z = 6
+        if (x > y && x > z) {
             console.log("x en büyük sayıdır");
-            if(y<z){
+            if (y < z) {
                 console.log("büyüklük sıralaması:x>z>y")
             }
-            else{
+            else {
                 console.log("büyüklük sıralaması:x>y>z")
             }
         }
-        else if(y>x&&y>z)
-        {
+        else if (y > x && y > z) {
             console.log("y en büyük sayıdır");
-            if(x<z){
+            if (x < z) {
                 console.log("büyüklük sıralaması:y>z>x")
             }
-            else{
+            else {
                 console.log("büyüklük sıralaması:y>x>z")
             }
         }
-        else{
+        else {
             console.log("z en büyük sayıdır");
-            if(y<x){
+            if (y < x) {
                 console.log("büyüklük sıralaması:z>x>y")
             }
-            else{
+            else {
                 console.log("büyüklük sıralaması:z>y>x")
             }
         }
 
 
         console.log("---------------")
-       
 
-        let vize1=40,vize2=4, final=70;
-        if(final<50)
+
+        let vize1 = 40, vize2 = 4, final = 70;
+        if (final < 50)
             console.log("kaldı. Final 50'den düşük");
-        else 
-        {
-            if(final==70 &&((vize1*0.2+vize2*0.2+final*0.6)<50))
-                console.log("geçti" + "ortalama: "+(vize1*0.2+vize2*0.2+final*0.6));
-            
-             else if((vize1*0.2+vize2*0.2+final*0.6)>=50)
-                console.log("geçti. Ortalama: "+(vize1*0.2+vize2*0.2+final*0.6));
+        else {
+            if (final == 70 && ((vize1 * 0.2 + vize2 * 0.2 + final * 0.6) < 50))
+                console.log("geçti" + "ortalama: " + (vize1 * 0.2 + vize2 * 0.2 + final * 0.6));
+
+            else if ((vize1 * 0.2 + vize2 * 0.2 + final * 0.6) >= 50)
+                console.log("geçti. Ortalama: " + (vize1 * 0.2 + vize2 * 0.2 + final * 0.6));
             else
-                console.log("kaldı. Ortalama: "+(vize1*0.2+vize2*0.2+final*0.6));
+                console.log("kaldı. Ortalama: " + (vize1 * 0.2 + vize2 * 0.2 + final * 0.6));
         }
         console.log("---------------")
         //FOR loop
-        for(let i =1; i<10;i++)
-        {
+        for (let i = 1; i < 10; i++) {
             console.log(i);
         }
 
 
-        let birlestirme=""
-        for(let i =1; i<10;i++)
-        {
-            birlestirme+=i+" "
+        let birlestirme = ""
+        for (let i = 1; i < 10; i++) {
+            birlestirme += i + " "
         }
         console.log(birlestirme)
 
 
         console.log("---------------")
 
-        let sayilar=[12,34,56,32,76,233]
-        let toplam=0
-        let ortalama=0
-        for(let i = 0; i<sayilar.length;i++)
-        {
-            toplam+=sayilar[i];
+        let sayilar = [12, 34, 56, 32, 76, 233]
+        let toplam = 0
+        let ortalama = 0
+        for (let i = 0; i < sayilar.length; i++) {
+            toplam += sayilar[i];
             console.log(sayilar[i]);
         }
-        console.log("sayıların toplamı:" +toplam);
-        console.log("sayıların ortalaması:" +(toplam/sayilar.length).toFixed(4));
-        
+        console.log("sayıların toplamı:" + toplam);
+        console.log("sayıların ortalaması:" + (toplam / sayilar.length).toFixed(4));
+
         console.log("---------------")
 
         //while loop
-        let i=1;
-        let birlestirme2=""
-        while(i<10)
-        {
+        let i = 1;
+        let birlestirme2 = ""
+        while (i < 10) {
             birlestirme2 += i + " "
             i++;
         }
@@ -180,9 +171,9 @@
 
         console.log("---------------")
 
-        let s3=1;
-        while(s3<100){
-            if(s3=6){
+        let s3 = 1;
+        while (s3 < 100) {
+            if (s3 = 6) {
                 console.log(s3);
                 break;
 
@@ -190,15 +181,77 @@
             s3++;
         }
         console.log("---------------")
+
+
+
+        //examples
+        let sayilar_dizisi = [3, 5, 7, 9, 12, 52, 79, 75, 65, 100];
+
+        //her bir sayının karesi
+        //for loop
+        for (let index = 0; index < sayilar_dizisi.length; index++) {
+            console.log(sayilar_dizisi[index] ** 2);
+
+        }
+
+        //while loop
+        let index = 0;
+        while (index < sayilar_dizisi.length) {
+            console.log(sayilar_dizisi[index] ** 2);
+            index++;
+        }
+        console.log("---------------")
+        //hangi sayılar 5'in katıdır
+        for (let index = 0; index < sayilar_dizisi.length; index++) {
+            if (sayilar_dizisi[index] % 5 == 0) {
+                console.log(sayilar_dizisi[index] + " 5'in katıdır");
+            }
+
+        }
+        let j = 0;
+        while (j < sayilar_dizisi.length) {
+            if (sayilar_dizisi[j] % 5 == 0) {
+                console.log(sayilar_dizisi[j] + " 5'in katıdır");
+            }
+            j++;
+        }
+        console.log("---------------")
+        //50-100 arası sayıları azalan yazma
+        for (let index = 100; index >= 50; index--) {
+            console.log(index);
+
+
+        }
+        let k = 100;
+        while (k>=50) {
+            console.log(k);
+            k--;
+        }
+
+
+        console.log("---------------")
+        let urunler=["laptop","mouse","keyboard","monitor","headset","printer","speaker","speaker"];
+        //ürünleri büyük harfe çevirme
+        for (let index = 0; index < urunler.length; index++) {
+           console.log(urunler[index].toUpperCase());
             
-
-
+        }
+       //belli kelime sayısını bulma
+       let sayac=0;
+        for (let index = 0; index < urunler.length; index++) {
+            if(urunler[index]=="speaker"){
+                sayac++;
+            }
+            
+        }
+        console.log(sayac);
         
+        console.log("---------------")
 
-       
-        
+
     </script>
     </script>
 
 </body>
+
 </html>
